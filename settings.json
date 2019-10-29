@@ -165,18 +165,10 @@
 	// ***********vscode-iconns
 	"vsicons.dontShowNewVersionMessage": false, // vscode-iconsの新バージョンを通知する
 	// **************php関連
-	// "phpcs.standard": "WordPress",
-	// "phpcs.executablePath": "/Users/makiyasu/.composer/vendor/squizlabs/php_codesniffer/bin/phpcs", // phpcs実行ファイルのパス
-	// "phpcs.executablePath": "/Users/makiyasu/.composer/vendor/squizlabs/php_codesniffer/bin/phpcs", // phpcs実行ファイルのパス
 	"php.suggest.basic": false, // VScode既存のPHP言語候補機能をオフ
 	"php.validate.enable": false, // VScode既存のPHP検証をオフ
-	// ***************phpcbf
-	// "phpcbf.enable": true, // phpcbfを有効
-	// "phpcbf.documentFormattingProvider": true,
-	// "phpcbf.executablePath": "phpcbf", // phpcbf実行ファイルのパス
-	// "phpcbf.standard": "WordPress", // ルールはWordpress基準
-	// "phpcbf.debug": true,
-	// "phpcbf.onsave": false, // セーブ時にPHP整形
+
+
 	"[markdown]": {
 		"editor.wordWrap": "on",
 		"editor.quickSuggestions": false,
@@ -207,7 +199,6 @@
 		"editor.formatOnSave": false,
 		"editor.formatOnPaste": false,
 		"editor.defaultFormatter": "persoderlind.vscode-phpcbf",
-		// "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
 	},
 	"html.format.enable": false,
 	"javascript.format.enable": false,

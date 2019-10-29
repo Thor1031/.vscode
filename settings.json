@@ -1,0 +1,215 @@
+{
+	// ************ウィンドウ設定
+	"window.zoomLevel": -1, // 拡大率
+	"window.openFoldersInNewWindow": "on", // フォルダを新しいウィンドウで開くかどうか
+	"window.title": "${activeEditorMedium}${separator}${rootName}", // タイトルバーの文字
+	// **************エディター設定
+	"editor.codeLens": false,
+	"editor.wordWrap": "on", // 右端で折り返す
+	"editor.tabSize": 2,
+	"editor.lineHeight": 0, // 0でフォントサイズに応じて行の高さを調整する
+	"editor.detectIndentation": false,
+	"editor.fontSize": 12, //  文字サイズ
+	"editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace", // フォント
+	"editor.glyphMargin": true, // 行の左端に余白を作る
+	"editor.roundedSelection": true, // 選択範囲の角を丸める
+	"editor.quickSuggestions": {
+		"comments": false, // コメント内では無効
+		"strings": true, // 文字列内では有効
+		"other": true //  その他の場所で有効
+	}, // 入力中に候補を自動的に表示するかどうか
+	"editor.formatOnType": true, // コード整形
+	"editor.formatOnSave": true, // コード整形
+	"editor.formatOnPaste": true, // コード整形
+	"editor.folding": true, // コードの折りたたみを許可
+	"editor.letterSpacing": -0.3, // 文字の間隔を詰める
+	"editor.lineNumbers": "on", // 行番号の表示
+	"editor.minimap.enabled": true, // ミニマップの表示
+	"editor.minimap.maxColumn": 40, // ミニマップの幅
+	"editor.scrollBeyondLastLine": true, // 最終行よりも下へのスクロールを許可
+	"editor.renderControlCharacters": true, // 制御文字の表示
+	// "editor.renderWhitespace": "boundary", // 連続した空白文字を可視化
+	"editor.insertSpaces": false, // Tabキーで半角スペースを入力しない
+	"editor.renderIndentGuides": true, // インデントのガイドラインを表示
+	"editor.minimap.renderCharacters": false, // ミニマップを簡略化
+	"editor.minimap.showSlider": "always", // ミニマップのハイライトを常に表示
+	"editor.minimap.side": "right", // オートインデント
+	"editor.cursorStyle": "line", // カーソルの形状
+	"editor.cursorBlinking": "smooth", // カーソルの表示形式
+	"editor.cursorWidth": 0, // カーソル幅
+	"editor.emptySelectionClipboard": true, // 選択範囲無しでのコピーを許可
+	"editor.links": true, // リンクをクリック可能に
+	"editor.matchBrackets": true, // 対応する括弧の強調表示をオンに
+	"editor.suggestFontSize": 12, // サジェストの文字サイズ
+	"editor.suggestLineHeight": 15, // サジェスト欄の行の高さ
+	"editor.colorDecorators": false,
+	"editor.multiCursorModifier": "ctrlCmd", // Cmdを押しながら、複数選択できる
+	"editor.renderLineHighlight": "all", // 現在の行を強調表示
+	"editor.snippetSuggestions": "top", // 他の候補の上にSnippetを候補に出す
+	"editor.tabCompletion": "on", // Tabキーで補完を展開する
+	"editor.tokenColorCustomizations": {
+		"comments": "#088A30"
+	},
+	// **************ファイル設定
+	"files.autoSave": "afterDelay", //ダーティファイルの自動保存
+	"files.eol": "\n", // 改行コードをLF(Linux/OSX)にする
+	"files.insertFinalNewline": true, // ファイルの終端に空の行を追加
+	"files.autoGuessEncoding": true, // 文字コードを自動判別
+	"files.trimTrailingWhitespace": true, // 保存時に末尾空白を削除
+	"files.associations": {
+		".*lintrc": "json" // *lintrcの末尾は.jsonで
+	}, //　末尾の.**を指定
+	"files.useExperimentalFileWatcher": true,
+	// ファイル監視から除外するファイル
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/*/**": true,
+		"**/.rvm/**": true,
+		"**/Library/**": true,
+		"**/GoogleDrive/**": true,
+		"**/Dropbox/**": true,
+		"**/.cocoapods/**": true,
+		"**/Pictures/**": true,
+		"**/.DS_Store": true,
+	},
+	// ［エクスプローラー］(左のファイルが並んでいるところ）に表示しないファイルを指定
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true,
+		"**/CVS": true,
+		"**/bin": false,
+		"**/*.o": true,
+		"**/*.obj": true,
+		"**/*.ilk": true,
+		"**/*.pdb": true,
+		"**/*.tlog": true,
+		"**/*.idb": true,
+		"**/*.dll": true
+	},
+	// *************ワークベンチ(アクティビティーバー、ステータスバーからボタン、バッジなど、VS CodeのUIを構成する各種要素の配色を指定する)設定
+	"workbench.editor.showTabs": true, // 開いているエディタのタブ表示
+	"workbench.editor.tabSizing": "shrink", // タブが多い場合,文字を非表示にしてもタブ表示を優先する
+	"workbench.activityBar.visible": true, // タブが多い場合,文字を非表示にしてもタブ表示を優先する
+	"workbench.statusBar.visible": true, // ステータスバー(下端)を表示
+	"workbench.sideBar.location": "left", // サイドバーを左に
+	"workbench.colorTheme": "Monokai", // カラーテーマ
+	"workbench.editor.closeEmptyGroups": false, // グリッドの最後のファイルを閉じたときにグリッドを残す
+	"workbench.startupEditor": "none", //　起動時にどのエディタも表示しない
+	"workbench.editor.labelFormat": "short", // エディタに表示するラベル形式
+	"workbench.colorCustomizations": {}, // カラーテーマに上書きする個別の設定
+	// ***************エクスプローラー(右にファイルを表示するところ)
+	"explorer.confirmDelete": false, // ファイルを消す際に確認する
+	"explorer.confirmDragAndDrop": false, // ドラックアンドドロップでファイル移動の際に確認しない
+	// ***********ターミナル
+	"terminal.integrated.copyOnSelection": true, // ターミナルのテキストコピー可能
+	// **********クラッシュレポートを送信する
+	"telemetry.enableCrashReporter": true,
+	"telemetry.enableTelemetry": true,
+	// ************拡張機能関連
+	"extensions.autoUpdate": true, // 自動更新
+	"extensions.ignoreRecommendations": false, // 推奨事項の通知をOFF
+	// *********文字の登録
+	"cSpell.userWords": [
+		"basebox",
+		"brsp",
+		"catchcopy",
+		"conts",
+		"enllax",
+		"fsize",
+		"gfooter",
+		"gheader",
+		"headerbtn",
+		"maxwidth",
+		"subttl",
+		"txtxs"
+	],
+	// ******** Csslint
+	"css.lint.important": "warning", // !importantで警告
+	"css.lint.duplicateProperties": "warning", // 重複するスタイルで警告
+	"css.lint.universalSelector": "warning", // ユニバーサルセレクタ(*)で警告
+	"css.lint.zeroUnits": "warning", // 0に単位はいらない
+	// ************* Scsslint
+	"scss.lint.important": "warning",
+	"scss.lint.duplicateProperties": "warning",
+	"scss.lint.universalSelector": "warning",
+	"scss.lint.zeroUnits": "warning",
+	// ************* Eslint
+	"eslint.autoFixOnSave": false, // セーブ時に自動整形
+	// *************** Emmet
+	"emmet.showSuggestionsAsSnippets": true, // Emmetを候補に表示
+	"emmet.triggerExpansionOnTab": true, // TabキーでEmmetが展開される
+	"emmet.variables": {
+		"lang": "ja"
+	}, // Emmetスニペットで使用される変数
+	// ************prettier
+	"prettier.useTabs": true,
+	// *********** 検索結果から除外
+	"search.exclude": {
+		"**/tmp": true,
+		"**/node_modules": true
+	},
+	// ******** エクスプローラーのナビゲーション階層リンクを有効にする
+	"breadcrumbs.enabled": true,
+	// **********重たい処理を全てoffにしている
+	"typescript.tsc.autoDetect": "off",
+	"grunt.autoDetect": "off",
+	"jake.autoDetect": "off",
+	"npm.autoDetect": "off",
+	"gulp.autoDetect": "off",
+	// ********オートパス
+	"path-autocomplete.extensionOnImport": true,
+	// ***********vscode-iconns
+	"vsicons.dontShowNewVersionMessage": false, // vscode-iconsの新バージョンを通知する
+	// **************php関連
+	// "phpcs.standard": "WordPress",
+	// "phpcs.executablePath": "/Users/makiyasu/.composer/vendor/squizlabs/php_codesniffer/bin/phpcs", // phpcs実行ファイルのパス
+	// "phpcs.executablePath": "/Users/makiyasu/.composer/vendor/squizlabs/php_codesniffer/bin/phpcs", // phpcs実行ファイルのパス
+	"php.suggest.basic": false, // VScode既存のPHP言語候補機能をオフ
+	"php.validate.enable": false, // VScode既存のPHP検証をオフ
+	// ***************phpcbf
+	// "phpcbf.enable": true, // phpcbfを有効
+	// "phpcbf.documentFormattingProvider": true,
+	// "phpcbf.executablePath": "phpcbf", // phpcbf実行ファイルのパス
+	// "phpcbf.standard": "WordPress", // ルールはWordpress基準
+	// "phpcbf.debug": true,
+	// "phpcbf.onsave": false, // セーブ時にPHP整形
+	"[markdown]": {
+		"editor.wordWrap": "on",
+		"editor.quickSuggestions": false,
+		"files.trimTrailingWhitespace": false
+	},
+	"[html]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.wrappingIndent": "none",
+	},
+	"[css]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[php]": {
+		"editor.formatOnSave": false,
+		"editor.formatOnPaste": false,
+		"editor.defaultFormatter": "persoderlind.vscode-phpcbf",
+		// "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+	},
+	"html.format.enable": false,
+	"javascript.format.enable": false,
+	"editor.formatOnSaveTimeout": 5000,
+}
